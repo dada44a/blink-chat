@@ -46,9 +46,10 @@ const Settings = () => {
   ];
 
   return (
-    <div className="max-w-2xl mx-auto px-5 py-6">
+    <div className="max-w-5xl mx-auto px-5 py-6">
       <h1 className="text-2xl font-display font-bold mb-8">Settings</h1>
 
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {sections.map((section, si) => (
         <motion.div
           key={section.title}
@@ -74,6 +75,7 @@ const Settings = () => {
           </div>
         </motion.div>
       ))}
+      </div>
 
       {/* Danger zone */}
       <motion.div
