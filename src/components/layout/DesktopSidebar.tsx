@@ -9,16 +9,19 @@ const links = [
 
 const DesktopSidebar = () => {
   return (
-    <aside className="w-20 h-screen sticky top-0 flex flex-col items-center py-6 border-r border-border bg-card/40 backdrop-blur-xl">
-      <Ghost className="h-7 w-7 text-primary mb-8" />
+    <aside className="w-56 h-screen sticky top-0 flex flex-col py-6 px-3 border-r border-border bg-card/40 backdrop-blur-xl">
+      <div className="flex items-center gap-2.5 px-3 mb-8">
+        <Ghost className="h-7 w-7 text-primary" />
+        <span className="text-lg font-display font-bold gradient-neon-text">Phantom</span>
+      </div>
 
-      <nav className="flex flex-col gap-2 flex-1">
+      <nav className="flex flex-col gap-1 flex-1">
         {links.map((link) => (
           <NavLink
             key={link.to}
             to={link.to}
             className={({ isActive }) =>
-              `w-12 h-12 rounded-2xl flex items-center justify-center transition-all ${
+              `h-11 rounded-2xl flex items-center gap-3 px-3 transition-all ${
                 isActive
                   ? "gradient-neon text-primary-foreground neon-glow-cyan"
                   : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
@@ -26,6 +29,7 @@ const DesktopSidebar = () => {
             }
           >
             <link.icon className="h-5 w-5" />
+            <span className="text-sm font-medium">{link.label}</span>
           </NavLink>
         ))}
       </nav>

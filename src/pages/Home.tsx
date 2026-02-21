@@ -10,7 +10,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-5xl mx-auto">
       {/* Header */}
       <div className="sticky top-0 z-40 glass-strong px-5 py-4">
         <div className="flex items-center justify-between mb-4">

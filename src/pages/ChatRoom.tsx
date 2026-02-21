@@ -79,7 +79,7 @@ const ChatRoom = () => {
   ];
 
   return (
-    <div className="flex flex-col h-screen max-w-2xl mx-auto">
+    <div className="flex flex-col h-screen max-w-5xl mx-auto">
       {/* Header */}
       <div className="glass-strong px-4 py-3 flex items-center gap-3 z-40">
         <button onClick={() => navigate("/home")} className="text-muted-foreground hover:text-foreground transition-colors">
