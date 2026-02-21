@@ -5,7 +5,7 @@ import DesktopSidebar from "./DesktopSidebar";
 
 const AppLayout = ({ children }: { children: ReactNode }) => {
   const location = useLocation();
-  const showNav = ["/home", "/profile", "/settings"].includes(location.pathname) || location.pathname.startsWith("/chat/");
+  const showNav = ["/home", "/friends", "/profile", "/settings"].includes(location.pathname) || location.pathname.startsWith("/chat/");
 
   if (!showNav) return <>{children}</>;
 

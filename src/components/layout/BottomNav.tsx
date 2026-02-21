@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
-import { MessageCircle, User, Settings } from "lucide-react";
+import { MessageCircle, Users, User, Settings } from "lucide-react";
 
 const links = [
   { to: "/home", icon: MessageCircle, label: "Chats" },
+  { to: "/friends", icon: Users, label: "Friends" },
   { to: "/profile", icon: User, label: "Profile" },
   { to: "/settings", icon: Settings, label: "Settings" },
 ];
