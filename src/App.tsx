@@ -9,6 +9,7 @@ import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Home from "./pages/Home";
+import Friends from "./pages/Friends";
 import ChatRoom from "./pages/ChatRoom";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
@@ -29,6 +30,7 @@ const App = () => (
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/home" element={<Home />} />
+              <Route path="/friends" element={<Friends />} />
               <Route path="/chat/:chatId" element={<ChatRoom />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/settings" element={<Settings />} />
